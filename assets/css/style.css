@@ -26,6 +26,7 @@
 
 h2 {
 font-size: 35px;
+padding-bottom: 30px;
 
 }
 
@@ -40,7 +41,7 @@ p {
     font-size: large;
 }
 
-.startBtn {
+.startBtn, button {
 
     background-color: rgb(92, 30, 173);
     padding: 10px;
@@ -51,7 +52,7 @@ p {
     border: 0ch;
 }
 
-.startBtn:hover {
+.startBtn:hover, button:hover {
 
     background-color: rgb(43, 9, 87);
     padding: 10px;
@@ -65,4 +66,12 @@ p {
 
 .hide {
     display: none;
+}
+
+.buttonLayout {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   gap: 10px;
+
 }
