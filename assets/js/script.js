@@ -1,12 +1,15 @@
+// these are all my IDs that traverse the DOM 
 var startButton = document.getElementById("start-button");
-var quizTimer = document.querySelector(".timer");
 var secondsLeft = 76;
 var startPage = document.getElementById("start-page");
 var questionContainer = document.getElementById("questionBlock");
 var questionElement = document.getElementById("question");
 var answerButtons = document.getElementById("answer-buttons");
 
+// these are all my classes that traverse the DOM 
+var quizTimer = document.querySelector(".timer");
 
+// a pool of questions to replace my questio id h2 tag 
 var questionPool = {
     
     firstQuestion:"Commonly used data types DO NOT include:",
@@ -36,6 +39,8 @@ questionContainer.classList.remove("hide");
 showQuestion();
 }
 
+
+// shows the first question in the quiz 
 function showQuestion() {
     questionElement.innerText = questionPool.firstQuestion;
 
