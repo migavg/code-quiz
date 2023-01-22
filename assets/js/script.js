@@ -1,34 +1,27 @@
-
-
-
-
-
+var startButton = document.getElementById("start-button");
 var quizTimer = document.querySelector(".timer");
-var secondsLeft = 5;
+var secondsLeft = 76;
+var startPage = document.getElementById("start-page");
 
 
 
 
 
-function runTimer() {
-    var timeInterval = setInterval(function() {
+// timer function
+function startQuiz() {
+    var timeInterval = setInterval(function () {
         secondsLeft--;
+        quizTimer.textContent = "Time Remaining: " + secondsLeft;
 
-    quizTimer.textContent = secondsLeft;
+        if (secondsLeft === 0) {
+            clearInterval(timeInterval);
+        }
+    }, 1000);
 
-    if(secondsLeft === 0) {
-        clearInterval(timeInterval);
-    }
-    },1000);
-    
-    }
+startButton.classList.add("hide");
+startPage.classList.add("hide");
 
+}
 
+startButton.addEventListener("click", startQuiz);
 
-
-
-
-
-
-
-    runTimer();
