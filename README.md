@@ -12,6 +12,7 @@ I referenced several tutorials online and talked to some classmates to get a bet
 
 Unfortunately the project isn’t finished and didn’t get to meet most of the criteria.
 
+![](assets/images/code-quiz-img.PNG)
 
 ## Installation
 
