@@ -72,10 +72,10 @@ while (answerButtons.firstChild) {
 
 }
 
-function selectAnswer(event) {
-    resetState();
+function selectAnswer(e) {
+   var selectedAnswer = e.target;
+   var correct = selectedAnswer.dataset.correct;
  
-
 }
 
 

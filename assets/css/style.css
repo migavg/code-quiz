@@ -75,3 +75,11 @@ p {
    gap: 10px;
 
 }
+
+.correctAnswer {
+    background-color: rgb(73, 255, 73);
+}
+
+.incorrectAnswer {
+    background-color: rgb(255, 28, 28);
+}
